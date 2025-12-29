@@ -1,0 +1,248 @@
+/* HOME / HERO */
+.hero {
+  height: 100vh;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content h1 {
+  color: white;
+  font-size: 80px;
+  letter-spacing: 6px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  color: #ccc;
+  font-size: 16px;
+  margin-bottom: 45px;
+}
+
+.hero-btn {
+  padding: 14px 38px;
+  background: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  box-shadow: 0 0 25px rgba(255, 200, 120, 0.6);
+  transform: translateY(-2px);
+}
+
+/* HERO SECTION */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: radial-gradient(
+      circle at center,
+      rgba(255, 200, 120, 0.15),
+      rgba(0, 0, 0, 0.85) 70%
+    ),
+    #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* subtle light glow */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 180, 90, 0.18),
+    transparent 60%
+  );
+  pointer-events: none;
+}
+
+/* CONTENT */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: #f5f5f5;
+}
+
+/* BRAND NAME */
+.hero-content h1 {
+  font-size: 4rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-shadow: 0 0 20px rgba(255, 200, 120, 0.15);
+}
+
+/* TAGLINE */
+.hero-content p {
+  font-size: 1.1rem;
+  opacity: 0.85;
+  margin-bottom: 30px;
+}
+
+/* BUTTON */
+.hero-content a {
+  display: inline-block;
+  padding: 14px 34px;
+  background: #fff;
+  color: #000;
+  border-radius: 999px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.hero-content a:hover {
+  box-shadow: 0 0 25px rgba(255, 200, 120, 0.6);
+  transform: translateY(-2px);
+}
+
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f7f6f3;
+  color: #111;
+}
+
+/* BACK LINK */
+.back-link {
+  display: inline-block;
+  margin: 30px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+/* PRODUCT SECTION */
+.product-section {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 40px;
+}
+
+/* IMAGE */
+.product-image img {
+  width: 320px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+}
+
+/* INFO */
+.product-info {
+  max-width: 420px;
+}
+
+.product-info h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* BUY BUTTON */
+.buy-btn {
+  padding: 14px 34px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* HOVER GLOW */
+.buy-btn:hover {
+  box-shadow: 0 0 25px rgba(255, 200, 120, 0.6);
+  transform: translateY(-2px);
+}
+
+/* CART */
+.cart {
+  position: fixed;
+  top: 0;
+  right: -360px;
+  width: 360px;
+  height: 100vh;
+  background: #000;
+  color: white;
+  padding: 30px;
+  transition: right 0.4s ease;
+  z-index: 9999;
+  box-shadow: -10px 0 40px rgba(0,0,0,0.6);
+}
+
+.cart.active {
+  right: 0;
+}
+
+.cart h2 {
+  margin-bottom: 20px;
+}
+
+.cart .price {
+  margin: 15px 0 25px;
+  font-size: 18px;
+}
+
+/* CART BUTTONS */
+.checkout-btn {
+  width: 100%;
+  padding: 12px;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 25px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.close-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 12px;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* BACKDROP */
+.cart-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 9998;
+}
+
+.cart-backdrop.active {
+  opacity: 1;
+  pointer-events: all;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumaire – Product</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- BACK LINK -->
+  <a href="index.html" class="back-link">← Back to Home</a>
+
+  <!-- PRODUCT SECTION -->
+  <section class="product-section">
+
+    <div class="product-image">
+      <img src="lamp.jpg" alt="Lumaire Ambient Lamp">
+    </div>
+
+    <div class="product-info">
+      <h1>Lumaire Ambient Lamp</h1>
+
+      <p class="description">
+        A minimal ambient lamp designed to elevate your space.<br>
+        Soft lighting for calm, focus, and late‑night vibes.<br>
+        Crafted for modern desks and bedrooms.
+      </p>
+
+      <button class="buy-btn" onclick="openCart()">Buy Now</button>
+    </div>
+
+  </section>
+
+  <!-- CART (KEEP OUTSIDE ALL SECTIONS) -->
+  <div class="cart" id="cart">
+    <h2>Your Cart</h2>
+    <p>Lumaire Ambient Lamp</p>
+    <p class="price">₹2,499</p>
+
+    <button class="checkout-btn">Checkout</button>
+    <button class="close-btn" onclick="closeCart()">Close</button>
+  </div>
+
+  <!-- BACKDROP -->
+  <div class="cart-backdrop" id="cartBackdrop" onclick="closeCart()"></div>
+
+  <!-- JS -->
+  <script>
+    function openCart() {
+      document.getElementById("cart").classList.add("active");
+      document.getElementById("cartBackdrop").classList.add("active");
+    }
+
+    function closeCart() {
+      document.getElementById("cart").classList.remove("active");
+      document.getElementById("cartBackdrop").classList.remove("active");
+    }
+  </script>
+
+</body>
+</html>
