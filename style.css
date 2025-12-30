@@ -272,3 +272,20 @@ body {
     margin-bottom: 30px;
   }
 }
+
+.trust {
+  color: #aaa;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.urgency {
+  margin-top: 10px;
+  color: #ffb347;
+  font-size: 14px;
+}
+
+.urgency span {
+  font-weight: bold;
+}
+
