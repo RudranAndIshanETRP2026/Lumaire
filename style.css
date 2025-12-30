@@ -289,3 +289,13 @@ body {
   font-weight: bold;
 }
 
+@keyframes glow {
+  0% { box-shadow: 0 0 15px rgba(255,200,120,0.2); }
+  50% { box-shadow: 0 0 35px rgba(255,200,120,0.4); }
+  100% { box-shadow: 0 0 15px rgba(255,200,120,0.2); }
+}
+
+.hero-btn {
+  animation: glow 3s infinite;
+}
+
