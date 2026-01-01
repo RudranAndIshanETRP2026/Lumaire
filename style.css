@@ -505,6 +505,46 @@ body {
   }
 }
 
+/* ===== ABOUT / FOUNDER SECTION ===== */
+
+.about-section {
+  background: linear-gradient(
+    to bottom,
+    #000,
+    rgba(255, 180, 100, 0.05)
+  );
+  padding: 120px 20px;
+}
+
+.about-container {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.about-container h2 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: #fff;
+  text-shadow: 0 0 25px rgba(255, 180, 100, 0.3);
+}
+
+.about-text {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #ccc;
+  margin-bottom: 25px;
+}
+
+.founder {
+  margin-top: 40px;
+  font-style: italic;
+  color: #aaa;
+  letter-spacing: 1px;
+}
+
+
+
 
 
 
