@@ -593,6 +593,27 @@ body {
   color: #666;
 }
 
+/* ===== TOP LOGO ===== */
+
+.logo {
+  position: fixed;
+  top: 25px;
+  left: 30px;
+  font-size: 20px;
+  letter-spacing: 4px;
+  color: #fff;
+  text-decoration: none;
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  color: #ffb347;
+  text-shadow: 0 0 12px rgba(255,180,100,0.8);
+  transform: translateY(-1px);
+}
+
+
 
 
 
