@@ -613,6 +613,50 @@ body {
   transform: translateY(-1px);
 }
 
+/* ===== TRUST SECTION ===== */
+
+.trust {
+  background: #000;
+  padding: 100px 20px;
+}
+
+.trust-container {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  text-align: center;
+}
+
+.trust-item {
+  background: rgba(255,255,255,0.03);
+  padding: 30px 20px;
+  border-radius: 18px;
+  box-shadow: 0 0 25px rgba(255,180,100,0.08);
+}
+
+.trust-item h3 {
+  color: #ffb347;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.trust-item p {
+  color: #aaa;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .trust-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+
 
 
 
