@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lumaire Admin</title>
+  <style>
+    body {
+      background: black;
+      color: white;
+      font-family: Arial;
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .order {
+      background: #111;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    .order span {
+      color: #ffb347;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>LUMAIRE — Orders</h1>
+  <div id="orders"></div>
+
+  <script>
+    const orders = JSON.parse(localStorage.getItem("orders")) || [];
+    const container = document.getElementById("orders");
+
+    if (orders.length === 0) {
+      container.innerHTML = "<p>No orders yet.</p>";
+    }
+
+    orders.forEach(o => {
+      container.innerHTML += `
+        <div class="order">
+          <p><span>Name:</span> ${o.name}</p>
+          <p><span>Email:</span> ${o.email}</p>
+          <p><span>Phone:</span> ${o.phone}</p>
+          <p><span>Address:</span> ${o.address}</p>
+          <p><span>Time:</span> ${o.time}</p>
+        </div>
+      `;
+    });
+  </script>
+
+</body>
+</html>
